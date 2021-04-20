@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
+
+body {
+  background-image: images/bgImage.jpg;
+  font-family: "Nothing You Could Do", cursive;
+}
+
+@keyframes font {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  color: black;
+  animation: font 3s;
+}
+
+@keyframes fadeInRoof {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.roof {
+  position: absolute;
+  font-size: 40px;
+  color: #a26836;
+  display: flex;
+  top: 65px;
+  left: 5px;
+  animation: fadeInRoof 2s;
+}
+
+.roof i {
+}
+
+.content {
+  margin-top: 100px;
+  margin-left: 25px;
+}
+
+@keyframes fadeInPaper {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.paper {
+  position: absolute;
+  top: 20px
+  left: 7px;
+  width: 350px;
+  height: 500px;
+  z-index: -1;
+
+  opacity: 0.8;
+  animation: fadeInPaper 2s;
+}
+
+h1 {
+  font-size: 100px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.clicked {
+  color: #f39c12;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  margin-top: -50px;
+  display: block;
+  font-size: 30px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.orginBgImg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  animation: fadeOut 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 2s ease-in;
+  z-index: -1;
+}
+
+.js-form input,
+.js-toDoForm input{
+  width: 250px;
+  border-radius: 20px;
+  outline-style: none;
+  border:solid 2px white;
+  font-size: 15px;
+  opacity: 0.5;
+  
+
+}
+
+.js-form input{
+  margin-bottom: 20px;
+}
+
+.js-toDoList{
+ list-style: none;
+}
+
+.js-toDoList li{
+ 
+  font-size: 40px;
+}
+
+.js-weather{
+  font-size: 30px;
+}
